@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Jiapeng's Blog]]></title>
+  <link href="http://blog.morlk.com/atom.xml" rel="self"/>
+  <link href="http://blog.morlk.com/"/>
+  <updated>2013-07-21T19:00:06+08:00</updated>
+  <id>http://blog.morlk.com/</id>
+  <author>
+    <name><![CDATA[JiapengLi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
