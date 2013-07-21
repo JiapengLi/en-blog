@@ -4,7 +4,7 @@
   <title><![CDATA[Jiapeng's Blog]]></title>
   <link href="http://en.jiapeng.me/atom.xml" rel="self"/>
   <link href="http://en.jiapeng.me/"/>
-  <updated>2013-07-21T22:02:19+08:00</updated>
+  <updated>2013-07-21T22:55:59+08:00</updated>
   <id>http://en.jiapeng.me/</id>
   <author>
     <name><![CDATA[JiapengLi]]></name>
@@ -12,5 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Try Octopress]]></title>
+    <link href="http://en.jiapeng.me/2013/07/21/try-octopress/"/>
+    <updated>2013-07-21T22:24:00+08:00</updated>
+    <id>http://en.jiapeng.me/2013/07/21/try-octopress</id>
+    <content type="html"><![CDATA[<p>Use Jekyll Bootstrap first, it is simple, but seems too simple, so try with Octopress, feels good.</p>
+
+<!-- more -->
+
+
+<h2>Code Highlight</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make me a sandwich</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.ruby-lang.org'>Ruby</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Hell, Ruby!&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Awesome code snippet</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Javascript Array Syntax</span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
