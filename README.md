@@ -1,6 +1,6 @@
 # Blog
 
-<http://blog.morlk.com>
+<http://en.jiapeng.me>
 
 ## With the help of octopress
 Website：<http://octopress.org>  
