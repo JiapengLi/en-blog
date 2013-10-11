@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Jiapeng's Blog]]></title>
   <link href="http://en.jiapeng.me/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://en.jiapeng.me/"/>
-  <updated>2013-07-21T23:42:41+08:00</updated>
+  <updated>2013-10-12T02:02:11+08:00</updated>
   <id>http://en.jiapeng.me/</id>
   <author>
     <name><![CDATA[JiapengLi]]></name>
@@ -45,6 +45,31 @@ $ sudo make me a sandwich
 </pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">hellip</span><span class="p">;,</span> <span class="nx">elementN</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Blog basic</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// Create new post
+</span><span class='line'>bundle exec rake new_post[&ldquo;name&rdquo;]&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>// preview
+</span><span class='line'>bundle exec rake preview&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>// publish
+</span><span class='line'>bundle exec rake generate
+</span><span class='line'>bundle exec rake deploy&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
