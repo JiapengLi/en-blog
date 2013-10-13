@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tool | Jiapeng's Blog]]></title>
   <link href="http://en.jiapeng.me/blog/categories/tool/atom.xml" rel="self"/>
   <link href="http://en.jiapeng.me/"/>
-  <updated>2013-10-13T11:37:42+08:00</updated>
+  <updated>2013-10-13T16:04:32+08:00</updated>
   <id>http://en.jiapeng.me/</id>
   <author>
     <name><![CDATA[JiapengLi]]></name>
@@ -12,6 +12,100 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Configure and Use Octopress on Ubuntu]]></title>
+    <link href="http://en.jiapeng.me/2013/10/13/configure-and-use-octopress-on-ubuntu/"/>
+    <updated>2013-10-13T11:04:00+08:00</updated>
+    <id>http://en.jiapeng.me/2013/10/13/configure-and-use-octopress-on-ubuntu</id>
+    <content type="html"><![CDATA[<p><em>Set Up a Octopress Environment and Use It!</em></p>
+
+<!-- more -->
+
+
+<h2>Set Up Enviroment</h2>
+
+<h3>Ruby</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>sudo su&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;curl -L &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://get.rvm.io&quot;</span>&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable &amp;mdash;ruby&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;rvm install 1.9.3&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;rvm &amp;mdash;default use 1.9.3&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;rvm rubygems lates&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>For me, i need enable <code>rvm</code> by checking <strong>Edit &ndash;> Profile Preferences &ndash;> Title and Command &ndash;> Command &ndash;> Run command as log in shell</strong> in gnome terminal.<br/>
+<a href="https://rvm.io/integration/gnome-terminal">Detailed Explation</a></p>
+
+<h3>Configure Octopress</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>sudo gem install bundler
+</span><span class='line'><span class="nv">$ </span>sudo bundle install
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Proxy</h3>
+
+<p><code>gem</code> source is fucked by GFW sometimes, run these two commands to use a proxy:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>// need a proxy tool<span class="o">(</span>GoAgent, Wallproxy ect<span class="o">)</span> first, and replace the ip with yours.
+</span><span class='line'><span class="nv">$ http_proxy</span><span class="o">=</span>&amp;ldquo;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:8087&quot;</span>&gt;http://127.0.0.1:8087&lt;/a&gt;&amp;rdquo;
+</span><span class='line'><span class="nv">$ </span><span class="nb">export </span>http_proxy
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Blog basic</h2>
+
+<p>Here are some commands which are used most frequently.
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>// Create new post
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span>&amp;ldquo;name&amp;rdquo;<span class="o">]</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;// preview
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake preview&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;// publish
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake generate
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake deploy&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Try Octopress]]></title>

@@ -45,6 +45,8 @@ $ sudo su
   <header role="banner"><hgroup>
   <h1><a href="/">Jiapeng's Blog</a></h1>
   
+    <h2>Life Joy Pain</h2>
+  
 </hgroup>
 
 </header>
@@ -109,16 +111,17 @@ $ sudo su
 
 <h3>Ruby</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo su
-</span><span class='line'># curl -L https://get.rvm.io | bash -s stable --ruby
-</span><span class='line'># rvm install 1.9.3
-</span><span class='line'># rvm --default use 1.9.3
-</span><span class='line'># rvm rubygems lates</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>sudo su
+</span><span class='line'><span class="c"># curl -L https://get.rvm.io | bash -s stable --ruby</span>
+</span><span class='line'><span class="c"># rvm install 1.9.3</span>
+</span><span class='line'><span class="c"># rvm --default use 1.9.3</span>
+</span><span class='line'><span class="c"># rvm rubygems lates</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>For me, i need enable <code>rvm</code> by checking <strong>Edit &ndash;> Profile Preferences &ndash;> Title and Command &ndash;> Command &ndash;> Run command as log in shell</strong> in gnome terminal.<br/>
@@ -126,33 +129,35 @@ $ sudo su
 
 <h3>Configure Octopress</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git://github.com/imathis/octopress.git octopress
-</span><span class='line'>$ cd octopress
-</span><span class='line'>$ sudo gem install bundler
-</span><span class='line'>$ sudo bundle install</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>sudo gem install bundler
+</span><span class='line'><span class="nv">$ </span>sudo bundle install
+</span></code></pre></td></tr></table></div></figure>
 
 
 <h3>Proxy</h3>
 
-<p><code>gem</code> source is fucked by GFW sometimes, run these to command to use a proxy:</p>
+<p><code>gem</code> source is fucked by GFW sometimes, run these two commands to use a proxy:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>// need a proxy(GoAgent, Wallproxy ect) first, and replace the ip below
-</span><span class='line'>$ http_proxy="http://127.0.0.1:8087"
-</span><span class='line'>$ export http_proxy</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>// need a proxy tool<span class="o">(</span>GoAgent, Wallproxy ect<span class="o">)</span> first, and replace the ip with yours.
+</span><span class='line'><span class="nv">$ http_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:8087&quot;</span>
+</span><span class='line'><span class="nv">$ </span><span class="nb">export </span>http_proxy
+</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Blog basic</h2>
 
 <p>Here are some commands which are used most frequently.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -161,15 +166,18 @@ $ sudo su
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>// Create new post
-</span><span class='line'>$ bundle exec rake new_post["name"]
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>// Create new post
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s2">&quot;name&quot;</span><span class="o">]</span>
 </span><span class='line'>
 </span><span class='line'>// preview
-</span><span class='line'>$ bundle exec rake preview
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake preview
 </span><span class='line'>
 </span><span class='line'>// publish
-</span><span class='line'>$ bundle exec rake generate
-</span><span class='line'>$ bundle exec rake deploy</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake generate
+</span><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
 
 </div>
 
@@ -195,6 +203,12 @@ $ sudo su
 
 <time datetime="2013-10-13T11:04:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/jekyll/'>Jekyll</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/tool/'>Tool</a>
+  
+</span>
 
 
     </p>
