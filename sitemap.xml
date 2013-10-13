@@ -2,11 +2,15 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://en.jiapeng.me/2013/07/21/try-octopress/</loc>
-        <lastmod>2013-10-12T02:01:42+08:00</lastmod>
+        <lastmod>2013-10-13T11:30:11+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://en.jiapeng.me/2013/10/13/configure-and-use-octopress-on-ubuntu/</loc>
+        <lastmod>2013-10-13T11:37:18+08:00</lastmod>
     </url>
     <url>
         <loc>http://en.jiapeng.me/blog/archives/</loc>
-        <lastmod>2013-10-12T02:01:42+08:00</lastmod>
+        <lastmod>2013-10-13T11:37:18+08:00</lastmod>
     </url>
     <url>
         <loc>http://en.jiapeng.me/CNAME</loc>
@@ -14,7 +18,7 @@
     </url>
     <url>
         <loc>http://en.jiapeng.me/</loc>
-        <lastmod>2013-10-12T02:01:42+08:00</lastmod>
+        <lastmod>2013-10-13T11:37:18+08:00</lastmod>
     </url>
     <url>
         <loc>http://en.jiapeng.me/robots.txt</loc>
